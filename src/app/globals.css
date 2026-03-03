@@ -123,5 +123,20 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-epilogue);
   }
+}
+
+/* primary color */
+.primaryText {
+  color: #4640DE;
+}
+
+.primaryButton {
+  @apply bg-[#4640DE] text-white rounded-lg hover:bg-blue-700 transition;
+}
+
+/* font styles */
+.font-red-hat-display {
+  font-family: var(--font-red-hat-display);
 }

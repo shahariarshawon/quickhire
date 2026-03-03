@@ -10,6 +10,8 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        primaryButton: "bg-[#4640DE] text-white rounded-lg hover:bg-blue-700 transition",
+        secondaryButton: "bg-white text-[#4640DE] rounded-lg hover:bg-secondary/80",
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:bg-destructive/60 dark:focus-visible:ring-destructive/40",
         outline:
@@ -31,10 +33,7 @@ const buttonVariants = cva(
         "icon-lg": "size-10",
       },
     },
-    defaultVariants: {
-      variant: "default",
-      size: "default",
-    },
+
   }
 )
 

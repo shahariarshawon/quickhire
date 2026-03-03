@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
-import { Epilogue } from "next/font/google";
+import { Epilogue, Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-
-const epilogue = Epilogue({
+export const epilogue = Epilogue({
   subsets: ["latin"],
   variable: "--font-epilogue",
-})
+});
+
+export const redHatDisplay = Red_Hat_Display({
+  subsets: ["latin"],
+  variable: "--font-red-hat-display",
+});
+
 
 export const metadata: Metadata = {
   title: "QuickHire",
@@ -22,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${epilogue.className} antialiased`}
+        className={`${epilogue.variable} ${redHatDisplay.variable} antialiased`}
       >
         <main>
           <Navbar />
